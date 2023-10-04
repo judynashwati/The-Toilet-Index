@@ -1,0 +1,40 @@
+.pin {
+    --size: 30px;
+    height: var(--size);
+    width: var(--size);
+    background: black;
+    color: white;
+    line-height: var(--size);
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1
+}
+  
+#pin-details {
+    /*height: 60px;
+    width: 120px;*/
+    color: black;
+    border: 1px solid gray;
+    padding: 4px;
+    background: lightgray;
+    position: fixed;
+    z-index: 2
+}
+  
+#map-container {
+    --font: Arial, sans-serif;
+    font-family: var(--font);
+    margin: auto;
+    position: relative;
+    z-index: 0;
+}
+  
+#map {
+    height: 400px;
+    width: 600px;
+    background: gray;
+    border: 2px solid black;
+    z-index: inherit;
+}

@@ -8,9 +8,20 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="/images/oakland_university_logo-freelogovectors.net_.webp"
+      href="./images/oakland_university_logo-freelogovectors.net_.webp"
     />
-
+    <link rel="stylesheet" type="text/css" href="../styles/style.css" />
+    <!-- NOTE: Using a developer version of jquery. Need to swap with production version on release -->
+    <script type="importmap">
+      {
+        "imports": {
+          "jquery": "../modules/jquery-3.7.1.js"
+        }
+      }
+    </script>
+    <script type="module", src="../scripts/main.js"></script>
+  </head>
+  <header>
     <!--navbar-->
     <h1>Oakland University Bathroom Index</h1>
     <nav id="navbar">
@@ -20,15 +31,10 @@
       <a href="./html/aboutUs.html">About Us</a>
       <a href="./html/presentation.html">Presentation</a>
     </nav>
-  </head>
-
+  </header>
   <body>
-    <div id="mapContainer">
-
-
-
-      
-    </div>
+    <div id="map-container" data-chunk="map"></div>
+    
 
   </body>
 </html>
