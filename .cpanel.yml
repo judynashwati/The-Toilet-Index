@@ -1,0 +1,9 @@
+---
+deployment:
+	tasks:
+		- export USER=$(whoami)
+		- export USER_PATH=/home/$USER
+		- export BRANCH=$(git rev-parse --abbrev-ref HEAD)
+		- export STAGING_PATH=$USER_PATH/public_html/staging/$BRANCH
+		- /bin/cp -R * $STAGING_PATH
+		
